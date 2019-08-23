@@ -25,6 +25,7 @@ wp-content/uploads/
 wp-content/mu-plugins/
 wp-content/wp-cache-config.php
 wp-content/plugins/
+wp-content/plugins/yukia-custom-blocks/.gitignore
 wp-includes/
 
 /.htaccess
@@ -33,3 +34,5 @@ wp-includes/
 /sitemap.xml
 /sitemap.xml.gz
 
+# Except for the yukia-custom-blocks directory:
+!wp-content/plugins/yukia-custom-blocks/
