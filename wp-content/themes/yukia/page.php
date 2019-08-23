@@ -15,21 +15,19 @@
 get_header();
 ?>
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
-			<section class="page-section" id="services">
-				<div class="container-fluid">
-					<div class="row justify-content-center">
-						<div class="col-lg-8">
-							<?php
-							while ( have_posts() ) : the_post();
-								get_template_part( 'template-parts/content', 'page' );
-							endwhile; // End of the loop.
-							?>
-						</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<main id="main" class="site-main">>
+						<?php
+						while ( have_posts() ) : the_post();
+							get_template_part( 'template-parts/content', 'page' );
+						endwhile; // End of the loop.
+						?>
+					</main><!-- #main -->
 				</div>
 			</div>
-	</section>
-		</main><!-- #main -->
+		</div>
 	</div><!-- #primary -->
 <?php
 get_footer();

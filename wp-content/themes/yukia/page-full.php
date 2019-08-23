@@ -9,19 +9,11 @@ get_header();
 ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-			<section class="page-section" id="services">
-				<div class="container-fluid">
-					<div class="row justify-content-center">
-						<div class="col-lg-8">
 							<?php
 							while ( have_posts() ) : the_post();
 								get_template_part( 'template-parts/content', 'page-full' );
 							endwhile; // End of the loop.
 							?>
-						</div>
-				</div>
-			</div>
-	</section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 <?php
