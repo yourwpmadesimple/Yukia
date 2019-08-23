@@ -18,7 +18,7 @@ get_header();
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<main id="main" class="site-main">>
+					<main id="main" class="site-main">
 						<?php
 						while ( have_posts() ) : the_post();
 							get_template_part( 'template-parts/content', 'page' );
